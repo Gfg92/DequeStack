@@ -6,24 +6,23 @@ public class LinkedStack<T extends Number> {
     }
 
     public Element<T> peek() { //mostrar el ultimo elemento añadido
-        if (topElement == null){
-            System.out.println("No hay ningun elemento en tu LinkedStack");
-        }
-        return topElement;
+       Object lastElement;
+       lastElement = topElement.getObject();
+        return (Element<T>) lastElement;
     }
 
-    public T pop() { //mostrar el elemento y borrarlo
+//    public T pop() { //mostrar el elemento y borrarlo
+//
+//    }
 
-    }
-
-    public void push(T item) { //añadir uno arriba del todo
+    public void push(T item) { //añadir uno arriba del tot
         Element<T> element = new Element(item);
         element.encimaDe(topElement);
         topElement = element;
     }
 
-    public int search(Object o) {
-
-    }
+//    public int search(Object o) {
+//
+//    }
 
 }
