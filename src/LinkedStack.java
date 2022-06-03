@@ -6,7 +6,7 @@ public class LinkedStack<T extends Number> {
     }
 
     public Element<T> peek() { //mostrar el ultimo elemento añadido
-        return (Element<T>) topElement.getObject();
+        return topElement;
     }
 
 //    public T pop() { //mostrar el elemento y borrarlo

@@ -22,4 +22,9 @@ public class Element<T> {
     public void setObject(T object) {
         this.object = object;
     }
+
+    @Override
+    public String toString() {
+        return ""+ object;
+    }
 }
