@@ -27,9 +27,18 @@ public class LinkedStack<T extends Number> {
         element.encimaDe(topElement);
         topElement = element;
     }
-//
-//    public int search(Object o) {
-//
-//    }
+
+    public int search(Object o) {
+        Element<T> element = topElement;
+        int posicion = 0;
+        while (element != null) {
+            posicion++;
+            if (element.getObject() == o) {
+                return posicion;
+            }
+            element = element.getNext();
+        }
+        return posicion;
+    }
 
 }
