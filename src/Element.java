@@ -10,9 +10,6 @@ public class Element<T> {
     public T getT(){
         return object;
     }
-    public Element<T> getNext() {
-        return next;
-    }
 
     public void encimaDe(Element<T> next) {
         this.next = next;
@@ -25,9 +22,7 @@ public class Element<T> {
     public void setObject(T object) {
         this.object = object;
     }
-    public void setNext(Element<T> next) {
-        this.next = next;
-    }
+
 
     public Element<T> getPrevious() {
         return previous;

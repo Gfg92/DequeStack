@@ -16,10 +16,7 @@ public class LinkedStack<T extends Number> {
         T obj;
         obj = peek().getT();
         topElement = peek().getPrevious();
-
         return obj;
-
-
     }
 
     public void push(T item) { //añadir uno arriba del tot
