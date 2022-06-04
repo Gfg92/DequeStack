@@ -11,14 +11,8 @@ public class Main {
         list.push(3);
         list.push(4);
         list.push(5);
-        System.out.println( list.search(2));
+        System.out.println(list.search(2));
 
 
-
-//        Stack<String> stack = new Stack<>();
-//        stack.push("manolo");
-//        stack.push("juan");
-//        stack.push("sofia");
-//        System.out.println( stack.search("manolo"));
     }
 }
