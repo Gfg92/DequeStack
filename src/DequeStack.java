@@ -1,4 +1,4 @@
-public class LinkedStack<T extends Number> {
+public class DequeStack<T extends Number> {
     private Element<T> topElement;
 
     public boolean empty() {
