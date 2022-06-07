@@ -1,6 +1,4 @@
 public class Element<T> {
-
-    private Element<T> next = null;
     private Element<T> previous = null;
     private T object = null;
 
@@ -17,15 +15,7 @@ public class Element<T> {
         return object;
     }
 
-    public void encimaDe(Element<T> next) {
-        this.next = next;
-    }
-
-    public Element<T> getNext() {
-        return next;
-    }
-
-    public void debajoDe(Element<T> previous) {
+    public void setPrevious(Element<T> previous) {
         this.previous = previous;
     }
 
@@ -34,7 +24,7 @@ public class Element<T> {
     }
 
     public void delete() {
-        next = null;
+        previous = null;
         object = null;
     }
 
